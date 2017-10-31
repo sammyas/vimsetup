@@ -7,6 +7,9 @@ colorscheme molokai
 map ,ts :TagbarOpen j<CR>
 com IS %s/\(\a\)(/\1 (/g))
 com WS %s/\s\+$//e
+com Wq wq
+com W w
+com Q q
 let g:tagbar_show_visibility=1
 autocmd VimEnter * nested :call tagbar#autoopen(1)
 set number
@@ -48,5 +51,6 @@ let g:go_disable_autoinstall = 0
      \ 'ctagsbin'  : 'gotags',
      \ 'ctagsargs' : '-sort -silent'
      \ }
+set colorcolumn=120
 
-set colorcolumn=80
+let g:go_fmt_command = "/home/sammyst/src/server/go/bin/goimports"
