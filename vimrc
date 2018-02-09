@@ -8,6 +8,7 @@ map ,ts :TagbarOpen j<CR>
 com IS %s/\(\a\)(/\1 (/g))
 com WS %s/\s\+$//e
 com Wq wq
+com WQ wq
 com W w
 com Q q
 let g:tagbar_show_visibility=1
