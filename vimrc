@@ -55,3 +55,6 @@ let g:go_disable_autoinstall = 0
 set colorcolumn=120
 
 let g:go_fmt_command = "/home/sammyst/src/server/go/bin/goimports"
+nnoremap f <C-]>
+nnoremap F <C-t>
+set tags=./tags;/
